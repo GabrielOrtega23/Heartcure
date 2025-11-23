@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heartcure - Clínica de Cardiologia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <img src="Heartcure.png" alt="Logo Heartcure">
+    <h1>Heartcure - Clínica de Cardiologia</h1>
+  </header>
+
+  <section>
+    <!-- Carrossel -->
+    <div id="carrossel">
+      <!-- Slide 1: Logo -->
+      <div class="carousel-slide">
+        <img src="Heartcure.png" class="slide-logo">
+        <h2 class="slide-titulo">Bem-vindo à Heartcure</h2>
+        <p class="slide-subtitulo">Cuidando do seu coração com excelência</p>
+      </div>
+
+      <!-- Slide 2: Serviços -->
+      <div class="carousel-slide">
+        <div class="slide-icone">🩺</div>
+        <h2 class="slide-titulo">Nossos Serviços</h2>
+        <p class="slide-subtitulo slide-subtitulo-btn">Conheça nossos serviços especializados</p>
+        <button class="slide-btn" onclick="mostrarServicos()">Clique aqui</button>
+      </div>
+
+      <!-- Slide 3: Preços -->
+      <div class="carousel-slide">
+        <div class="slide-icone">💰</div>
+        <h2 class="slide-titulo">Tabela de Preços</h2>
+        <p class="slide-subtitulo slide-subtitulo-btn">Confira nossos valores</p>
+        <button class="slide-btn" onclick="mostrarPrecos()">Clique aqui</button>
+      </div>
+
+      <!-- Slide 4: Contato -->
+      <div class="carousel-slide">
+        <div class="slide-icone">📞</div>
+        <h2 class="slide-titulo">Entre em Contato</h2>
+        <p class="slide-subtitulo slide-subtitulo-btn">Agende sua consulta agora</p>
+        <button class="slide-btn" onclick="redirecionarContato()">Clique aqui</button>
+      </div>
+
+      <!-- Botões de navegação -->
+      <button id="prev" class="nav-btn" onclick="mudarSlide(-1)">&#10094;</button>
+      <button id="next" class="nav-btn" onclick="mudarSlide(1)">&#10095;</button>
+
+      <!-- Indicadores -->
+      <div id="indicators">
+        <span class="dot" onclick="slideAtual(1)"></span>
+        <span class="dot" onclick="slideAtual(2)"></span>
+        <span class="dot" onclick="slideAtual(3)"></span>
+        <span class="dot" onclick="slideAtual(4)"></span>
+      </div>
+    </div>
+
+    <h2>Sobre a Heartcure</h2>
+    <p>A Heartcure é uma clínica especializada em cardiologia, dedicada à prevenção, diagnóstico e tratamento das doenças do coração. Nosso objetivo é cuidar da sua saúde cardiovascular com excelência, tecnologia de ponta e uma equipe médica altamente qualificada.</p>
+
+    <h2>Nossos Serviços</h2>
+    <ul>
+      <li>Consultas com cardiologistas experientes</li>
+      <li>Exames cardíacos completos (ECG, Ecocardiograma, Teste Ergométrico)</li>
+      <li>Check-up cardiovascular personalizado</li>
+      <li>Acompanhamento de hipertensão e colesterol</li>
+      <li>Tratamento e prevenção de arritmias e insuficiência cardíaca</li>
+    </ul>
+
+    <h2>Tabela de Preços</h2>
+    <table>
+      <tr>
+        <th>Serviço</th>
+        <th>Descrição</th>
+        <th>Preço</th>
+      </tr>
+      <tr>
+        <td>Consulta Cardiológica</td>
+        <td>Avaliação com cardiologista especialista</td>
+        <td>R$ 350,00</td>
+      </tr>
+      <tr>
+        <td>Eletrocardiograma (ECG)</td>
+        <td>Exame para avaliar a atividade elétrica do coração</td>
+        <td>R$ 120,00</td>
+      </tr>
+      <tr>
+        <td>Ecocardiograma</td>
+        <td>Ultrassom do coração para avaliar sua estrutura e função</td>
+        <td>R$ 450,00</td>
+      </tr>
+      <tr>
+        <td>Teste Ergométrico</td>
+        <td>Exame de esforço para avaliar o coração durante exercício</td>
+        <td>R$ 380,00</td>
+      </tr>
+      <tr>
+        <td>Check-up Cardíaco Completo</td>
+        <td>Pacote com consulta, ECG, Ecocardiograma e exames laboratoriais</td>
+        <td>R$ 980,00</td>
+      </tr>
+      <tr>
+        <td>Holter 24 horas</td>
+        <td>Monitoramento contínuo da atividade cardíaca por 24 horas</td>
+        <td>R$ 550,00</td>
+      </tr>
+    </table>
+
+    <h2>Nosso Compromisso</h2>
+    <p>Na Heartcure, acreditamos que cuidar do coração é cuidar da vida. Trabalhamos com dedicação para oferecer atendimento humanizado, precisão no diagnóstico e um plano de tratamento eficaz para cada paciente.</p>
+  </section>
+
+  <footer>
+    <p><a href="contato.html">Contato</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
